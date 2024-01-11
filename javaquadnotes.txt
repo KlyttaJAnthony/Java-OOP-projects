@@ -1,0 +1,13 @@
+by importing the name of the file on the powershell, we can run programs straight from the shell.
+
+For instance:
+
+If we ran the quadratic_formula.py, the powershell will run the code. 
+
+If we want to find the function itself, we can run the quadratic_formula.coefficient_input() (coefficient_input is a function within the program).
+
+
+
+
+Java does not have any lists or tuples. Instead, Java has only arrays. 
+	Arrays are fixed size, and all entries are the same data type. Otherwise, all else the same as lists.

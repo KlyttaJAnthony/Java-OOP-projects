@@ -1,0 +1,164 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\ajkly> jshell
+|  Welcome to JShell -- Version 19.0.2
+|  For an introduction type: /help intro
+
+jshell> 6 << 2
+$1 ==> 24
+
+jshell> Integer.toBinaryString(6)
+$2 ==> "110"
+
+jshell> Integer.toBinaryString(24)
+$3 ==> "11000"
+
+jshell>
+        6 >> 2
+$4 ==> 1
+
+jshell> Integer.toBinaryString(1)
+$5 ==> "1"
+
+jshell> 6 >>> 2
+$6 ==> 1
+
+jshell> Integer.toBinaryString(1)
+$7 ==> "1"
+
+jshell> 6 >> 5
+$8 ==> 0
+
+jshell> Integer.toBinaryString(0)
+$9 ==> "0"
+
+jshell> 6 >>> 5
+$10 ==> 0
+
+jshell> -6 >> 2
+$11 ==> -2
+
+jshell> Integer.toBinaryString(-2)
+$12 ==> "11111111111111111111111111111110"
+
+jshell> Integer.toBinaryString(-6)
+$13 ==> "11111111111111111111111111111010"
+
+jshell> Integer.toBinaryString(-22222222222)
+|  Error:
+|  integer number too large
+|  Integer.toBinaryString(-22222222222)
+|                          ^
+
+jshell> Integer.toBinaryString(-2222222)
+$14 ==> "11111111110111100001011101110010"
+
+jshell> Integer.tobinaryString(2222222)
+|  Error:
+|  cannot find symbol
+|    symbol:   method tobinaryString(int)
+|  Integer.tobinaryString(2222222)
+|  ^--------------------^
+
+jshell> 22222222222 >> 10
+|  Error:
+|  integer number too large
+|  22222222222 >> 10
+|  ^
+
+jshell> 2222222 >> 10
+$15 ==> 2170
+
+jshell> 222222222 >> 10
+$16 ==> 217013
+
+jshell> 222222222222 >> 10
+|  Error:
+|  integer number too large
+|  222222222222 >> 10
+|  ^
+
+jshell> 2222222222 >> 10
+|  Error:
+|  integer number too large
+|  2222222222 >> 10
+|  ^
+
+jshell> 222222222 >> 10
+$17 ==> 217013
+
+jshell> 222222222 >>> 10
+$18 ==> 217013
+
+jshell> -222222222 >> 10
+$19 ==> -217014
+
+jshell> 222222222 >>> 10
+$20 ==> 217013
+
+jshell> Integer.toBinaryString(222222222 >>> 10)
+$21 ==> "110100111110110101"
+
+jshell> Integer.toBinaryString(222222222 >> 10)
+$22 ==> "110100111110110101"
+
+jshell> Integer.ToBinaryString(-222222222 >> 2)
+|  Error:
+|  cannot find symbol
+|    symbol:   method ToBinaryString(int)
+|  Integer.ToBinaryString(-222222222 >> 2)
+|  ^--------------------^
+
+jshell> 2 & 4
+$23 ==> 0
+
+jshell> Integer.toBinary(2)
+|  Error:
+|  cannot find symbol
+|    symbol:   method toBinary(int)
+|  Integer.toBinary(2)
+|  ^--------------^
+
+jshell> Integer.toBinaryString(2)
+$24 ==> "10"
+
+jshell> Integer.toBinaryString(4)
+$25 ==> "100"
+
+jshell> Integer.toBinaryString(5)
+$26 ==> "101"
+
+jshell> Integer.toBinaryString(11)
+$27 ==> "1011"
+
+jshell> 13 & 12
+$28 ==> 12
+
+jshell> 13 & 11
+$29 ==> 9
+
+jshell> 13 ^ 11
+$30 ==> 6
+
+jshell> 11^5
+$31 ==> 14
+
+jshell> 2 ^ 4
+$32 ==> 6
+
+jshell> 2 ^ 4
+$33 ==> 6
+
+jshell> 11 | 5
+$34 ==> 15
+
+jshell> 2 | 4
+$35 ==> 6
+
+jshell> 13 | 11
+$36 ==> 15
+
+jshell>
